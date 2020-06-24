@@ -1,0 +1,10 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Random gif</h1>
+        <iframe src="@Model.GifUrl" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
