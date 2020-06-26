@@ -14,7 +14,13 @@ namespace ReliasK8sDemoApp.Controllers
         {
             "https://giphy.com/embed/lMVNl6XxTvXgs",
             "https://giphy.com/embed/9oF7EAvaFUOEU",
-            "https://giphy.com/embed/Qa5dsjQjlCqOY"
+            "https://giphy.com/embed/Qa5dsjQjlCqOY",
+            "https://giphy.com/embed/5wWf7H89PisM6An8UAU",
+            "https://giphy.com/embed/dEdmW17JnZhiU",
+            "https://giphy.com/embed/dE8BENPVMXoqc",
+            "https://giphy.com/embed/l2Sqf1Y2g9C3F97kA",
+            "https://giphy.com/embed/6cFcUiCG5eONW"
+
         };
 
         public GifController(ILogger<GifController> logger)
@@ -25,7 +31,7 @@ namespace ReliasK8sDemoApp.Controllers
         [HttpGet]
         public string Get()
         {
-            var rng = DateTime.Now.Second % 3;
+            var rng = DateTime.Now.Second % 8;
 
             return _gifList[rng];
         }
